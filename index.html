@@ -15,10 +15,10 @@
 		} */
 
 		.sidenav {
-			width: 130px;
+			width: 100px;
 			position: fixed;
 			z-index: 1;
-			top: 110px;
+			top: 105px;
 			left: 300px;
 /* 			background: #eee; */
 			overflow-x: hidden;
@@ -150,24 +150,23 @@
             </td>
           </tr> 
 
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <tr onmouseout="icipnight_stop()" onmouseover="icipnight_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerfbake_15.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerfbake_160.png' width="160">
+                <div class="two" id='icipnight_image'>
+                <source src="images/night_pred_seg_160.png" width="160" style="border-style: none">                
+                </div>
+                <img src='images/night_image_160.png' width="160">
               </div>
               <script type="text/javascript">
-                function nerfbake_start() {
-                  document.getElementById('nerfbake_image').style.opacity = "1";
+                function icipnight_start() {
+                  document.getElementById('icipnight_image').style.opacity = "1";
                 }
 
-                function nerfbake_stop() {
-                  document.getElementById('nerfbake_image').style.opacity = "0";
+                function icipnight_stop() {
+                  document.getElementById('icipnight_image').style.opacity = "0";
                 }
-                nerfbake_stop()
+                icipnight_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
